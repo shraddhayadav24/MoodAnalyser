@@ -9,8 +9,8 @@ public class MoodAnalyserTestOne {
     @Test
    public  void analyzeMood(){
     MoodAnalyseOne moodAnalyseOne1=new MoodAnalyseOne();
-    String mood= moodAnalyseOne1.analyzeMood("I  am in Sad mood".toLowerCase());
-    Assert.assertEquals(mood, "SAD");
+    String mood= moodAnalyseOne1.analyzeMood("I  am in Any mood".toLowerCase());
+    Assert.assertEquals(mood, "Happy");
     }
 
 
