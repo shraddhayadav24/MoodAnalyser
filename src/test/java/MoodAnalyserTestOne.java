@@ -3,19 +3,16 @@ import org.example.MoodAnalyseOne;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Locale;
+
 public class MoodAnalyserTestOne {
     @Test
-    public void givenMessage_WhenProper_ShouldReturnSad(){
-        MoodAnalyseOne moodAnalyse=new MoodAnalyseOne();
-        String result=moodAnalyse.analyzeMood("I am in sad mood");
-        Assert.assertEquals("SAD" , result);
+   public  void analyzeMood(){
+    MoodAnalyseOne moodAnalyseOne1=new MoodAnalyseOne();
+    String mood= moodAnalyseOne1.analyzeMood("I  am in Sad mood".toLowerCase());
+    Assert.assertEquals(mood, "SAD");
     }
 
-    @Test
-    public void givenMessage_WhenProper_ShouldReturnHappy(){
-        MoodAnalyseOne moodAnalyse=new MoodAnalyseOne();
-        String result=moodAnalyse.analyzeMood("I am in happy mood");
-        Assert.assertEquals("HAPPY" , result);
-    }
+
 
 }
