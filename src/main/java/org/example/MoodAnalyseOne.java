@@ -22,7 +22,7 @@ public class MoodAnalyseOne {
 
         }
         catch (NullPointerException e) {
-            return "INVALID";
+            return "Happy";
         }
     }
 }
